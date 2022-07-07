@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="left">
+            <div class="logo">
+                <img src="./images/odin-lined.png" alt="logo">
+                <h1>Grouse Grind!!</h1>
+            </div>
+        </div>
+        <div class="right">
+            <div class="description">
+                <p class="descriptor"><b>Who likes hiking? We know you do! 
+                    You gotta enjoy the great outdoors if you want to live in Vancouver.
+                    </b>
+                </p>
+                <p class="descriptor2"><b>Sign up <em>now</em> to get started.</p></b>
+                <p class="descriptor3"><b>You <em>know </em>you want to.</p></b>
+            </div>
+            <div class="form-container">
+                <form action="#" class="form" id="form1">
+                    <h1>Let's Do It!</h1>
+                    <div class="row">
+                        <div style="float:left;margin-right:40px; margin-top: 25px;">
+                            <label for="fname">FIRST NAME </label>
+                            <input type="text" id="fname" name="fname" placeholder="Bob">
+                        </div>
+                        <div style="float:left;margin-top: 25px;">
+                            <label for="lname">LAST NAME</label>
+                            <input type="text" id="lname" name="lname" placeholder="Smith">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div style="float:left;margin-right:40px;">
+                            <label for="email">EMAIL </label>
+                            <input type="email" id="email" name="email" placeholder="bobsmith@outlook.com">
+                        </div>
+                        <div style="float:left;">
+                            <label for="pnum">PHONE NUMBER</label>
+                            <input type="text" id="pnum" name="pnum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="604-123-1234">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div style="float:left;margin-right:40px;">
+                            <label for="pwd">V# </label>
+                            <input type="password" id="pwd" name="pwd">
+                        </div>
+                        <div style="float:left;">
+                            <label for="pwd2">CONFIRM V#</label>
+                            <input type="password" id="pwd2" name="pwd2">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="account">
+                <div class="account-info">
+                    <button type="submit" form="form1" class="btn" id="main-button" onclick="passwordValidation()"><b>SUBMIT YOUR REQUEST!</b></button>
+                    <p>Already booked a reservation? <a href="https://github.com/rebirth112">Click here</a> to manage your booking.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
